@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0B0B0F;
+  --fg: #EDEDF2;
+}
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+}
+/* Minimal glow animation for digits/mandala */
+.glow {
+  animation: glow 4s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from { filter: drop-shadow(0 0 2px rgba(255,122,0,0.5)); opacity: .6; }
+  to   { filter: drop-shadow(0 0 10px rgba(106,76,255,0.8)); opacity: 1; }
+}
